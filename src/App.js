@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Home from "./Components/Home";
+import Login from "./Components/Login/Login";
+import SearchPage from "./Components/Movies/SearchPage";
+import { Redirect, Route } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route path="/login" component={Login} exact />
+      <Route exact path="/">
+        <Redirect to="/login" />
+      </Route>
+
+      <Route path="/Home" component={Home} />
+      <Route path="/SearchPage" component={SearchPage} />
     </div>
   );
-}
+};
 
 export default App;

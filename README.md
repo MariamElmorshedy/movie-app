@@ -13,7 +13,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
+## Instructions
+login first to enter the application, after being loggedin successfully ypu will get redirected to home page where you will be able to see recent popular movies, top rated and popular movies 
+you will see the search bar above with search button which clicking on will redirect you to search page where you can search any movie you want 
+notice that hovering any movie displays its rating, info and clicking on it displays its trailer  
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

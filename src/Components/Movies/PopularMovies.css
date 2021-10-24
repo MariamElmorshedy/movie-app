@@ -1,0 +1,47 @@
+.decorate {
+  background-color: transparent !important;
+  margin-top: -186px !important;
+  color: white !important ;
+}
+.card {
+  border: none !important;
+  position: relative;
+
+  transition: 0.5s ease-in-out !important;
+  padding: 10px;
+  background-color: transparent !important;
+}
+
+
+.pop:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 171%;
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4));
+}
+.pop:hover:before {
+  opacity: 1;
+}
+.pop:hover .pop-info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.pop-info {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.carouselCont {
+  margin-right: 30px;
+}

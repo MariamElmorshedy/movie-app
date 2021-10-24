@@ -1,0 +1,23 @@
+.pagination{
+    color: transparent !important;
+    justify-content: center !important;
+    background-color: transparent !important;
+}
+.page-item{
+    color: rgb(121, 121, 121) !important;
+    background-color: transparent !important;
+}
+.page-link{
+    color: rgb(121, 121, 121) !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+.page-link:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important; 
+    border-color: inherit !important;
+    color: white !important;
+
+}
